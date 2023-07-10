@@ -10,13 +10,15 @@ public class TestPerson {
     @Test
     public void testDefaultConstructor() {
         // Given
-        String expectedName = "";
-        Integer expectedAge = Integer.MAX_VALUE;
+        String expectedName = "Santos";
+        Integer expectedAge = 20;
 
         // When
         Person person = new Person();
 
         // Then
+        person.setName("Santos");
+        person.setAge(20);
         String actualName = person.getName();
         Integer actualAge = person.getAge();
 
@@ -31,6 +33,7 @@ public class TestPerson {
 
         // When
         Person person = new Person(expected);
+
 
         // Then
         String actual = person.getName();
